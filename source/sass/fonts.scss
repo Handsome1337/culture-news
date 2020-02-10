@@ -1,0 +1,71 @@
+@font-face {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src:
+    local("Playfair Display Black"),
+    local("PlayfairDisplay-Black"),
+    url("../fonts/PlayfairDisplay-Black.woff2"),
+    url("../fonts/PlayfairDisplay-Black.woff");
+}
+
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src:
+    local("Raleway Light"),
+    local("Raleway-Light"),
+    url("../fonts/ralewaylight.woff2"),
+    url("../fonts/ralewaylight.woff");
+}
+
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src:
+    local("Raleway Regular"),
+    local("Raleway-Regular"),
+    url("../fonts/ralewayregular.woff2"),
+    url("../fonts/ralewayregular.woff");
+}
+
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src:
+    local("Raleway Medium"),
+    local("Raleway-Medium"),
+    url("../fonts/ralewaymedium.woff2"),
+    url("../fonts/ralewaymedium.woff");
+}
+
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src:
+    local("Raleway SemiBold"),
+    local("Raleway-SemiBold"),
+    url("../fonts/ralewaysemibold.woff2"),
+    url("../fonts/ralewaysemibold.woff");
+}
+
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src:
+    local("Raleway Bold"),
+    local("Raleway-Bold"),
+    url("../fonts/ralewaybold.woff2"),
+    url("../fonts/ralewaybold.woff");
+}
