@@ -1,0 +1,45 @@
+.new-article {
+  color: #ffffff;
+
+  padding: 25px 0;
+
+  background: url("../../img/hotel.jpg") no-repeat #0a1227;
+  background-size: cover;
+}
+
+.new-article__mark {
+  font-size: 16px;
+  line-height: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+  display: block;
+  width: 100px;
+  margin: 0 auto 30px;
+  padding: 5px;
+
+  background-color: #ff7931;
+}
+
+.new-article__title {
+  font-size: 30px;
+  line-height: 150%;
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+  width: 280px;
+  margin: 0 auto 20px;
+  padding: 0;
+}
+
+.new-article__text {
+  font-size: 14px;
+  line-height: 150%;
+  text-align: center;
+
+  width: 280px;
+  margin: 0 auto 30px;
+}

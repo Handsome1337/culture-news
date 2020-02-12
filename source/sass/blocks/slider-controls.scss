@@ -1,0 +1,35 @@
+.slider-controls {
+  display: flex;
+  width: 110px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.slider-controls__item {
+  width: 10px;
+  height: 10px;
+  padding: 0;
+
+  background-color: #ffffff;
+  border: 0;
+  border-radius: 50%;
+
+  opacity: 0.4;
+
+  &--active {
+    opacity: 1;
+  }
+
+  cursor: pointer;
+}
+
+.slider-controls__item[href] {
+  &:hover,
+  &:focus {
+    opacity: 1;
+  }
+
+  &:active {
+    background-color: #FF7931;
+  }
+}

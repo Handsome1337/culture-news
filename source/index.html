@@ -7,5 +7,41 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <header class="site-header">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+        <svg class="main-nav__cross-logo" role="img" aria-labelledby="heading" width="30" height="30" focusable="false">
+          <title id="heading">Закрыть меню</title>
+          <path d="M29 29L1 1M1 29L29 1L1 29Z" stroke="#D7D9DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+      <ul class="main-nav__list site-nav-list">
+        <li class="site-nav-list__item"><a class="site-nav-list__link">Новости</a></li>
+        <li class="site-nav-list__item"><a class="site-nav-list__link" href="#">Обзоры</a></li>
+        <li class="site-nav-list__item"><a class="site-nav-list__link" href="#">Музыка</a></li>
+        <li class="site-nav-list__item"><a class="site-nav-list__link" href="#">Архитектура</a></li>
+        <li class="site-nav-list__item"><a class="site-nav-list__link" href="#">Кино</a></li>
+        <li class="site-nav-list__item"><a class="site-nav-list__link" href="#">Театр</a></li>
+        <li class="site-nav-list__item"><a class="site-nav-list__link" href="#">Литература</a></li>
+        <li class="site-nav-list__item"><a class="site-nav-list__link" href="#">Религия</a></li>
+        <li class="site-nav-list__item"><a class="site-nav-list__link" href="#">Живопись</a></li>
+      </ul>
+    </nav>
+    <h1 class="site-header__headline">Новости культуры</h1>
+    <article class="new-article">
+      <span class="new-article__mark">Новое</span>
+      <h2 class="new-article__title">Подводный отель</h2>
+      <P class="new-article__text">Как известно, Дубай – город контрастов. Самые революционные<br>
+        и фантастические мечты архитекторов способен воплотить в жизнь этот мегаполис, построенный на нефти и за счет нефти</P>
+      <div class="slider-controls">
+        <a class="slider-controls__item slider-controls__item--active" aria-label="Первая статья"></a>
+        <a class="slider-controls__item" href="#" aria-label="Первая статья"></a>
+        <a class="slider-controls__item" href="#" aria-label="Первая статья"></a>
+        <a class="slider-controls__item" href="#" aria-label="Первая статья"></a>
+        <a class="slider-controls__item" href="#" aria-label="Первая статья"></a>
+      </div>
+    </article>
+  </header>
 </body>
 </html>

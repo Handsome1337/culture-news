@@ -1,0 +1,21 @@
+.site-header {
+  position: relative;
+
+  width: 320px;
+  margin: 0 auto;
+
+  outline: 1px solid red;
+}
+
+.site-header__headline {
+  font-size: 25px;
+  line-height: 33px;
+  font-family: "Playfair Display", "Georgia", "Times New Roman", serif;
+  font-weight: 900;
+  text-align: center;
+  letter-spacing: 1px;
+
+  width: 150px;
+  margin: 0 auto 30px;
+  padding: 0;
+}
