@@ -33,3 +33,9 @@
     background-color: #FF7931;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .slider-controls {
+    display: none;
+  }
+}

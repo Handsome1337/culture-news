@@ -69,6 +69,38 @@
 
   &:active::before,
   &:active::after {
-    background-color: #FF7931;
+    background-color: rgba(#FF7931, 0.3);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-nav-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  .site-nav-list__item {
+    margin: 0;
+
+    &:last-of-type {
+      margin: 0;
+    }
+  }
+
+  .site-nav-list__link {
+    font-size: 15px;
+    line-height: 18px;
+    color: #000000;
+    letter-spacing: 2px;
+
+    padding: 0;
+
+    background-color: #ffffff;
+
+    &::before,
+    &::after {
+    display: none;
+  }
   }
 }

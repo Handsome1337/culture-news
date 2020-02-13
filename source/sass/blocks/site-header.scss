@@ -3,8 +3,6 @@
 
   width: 320px;
   margin: 0 auto;
-
-  outline: 1px solid red;
 }
 
 .site-header__headline {
@@ -18,4 +16,21 @@
   width: 150px;
   margin: 0 auto 30px;
   padding: 0;
+}
+
+@media (min-width: $desktop-width) {
+  .site-header {
+    display: flex;
+    flex-flow: column wrap;
+    width: auto;
+  }
+
+  .site-header__headline {
+    font-size: 35px;
+    line-height: 47px;
+
+    order: -1;
+    width: 500px;
+    margin: 50px auto 46px;
+  }
 }

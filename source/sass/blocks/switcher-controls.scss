@@ -1,0 +1,104 @@
+.switcher-controls {
+  display: none;
+}
+
+@media (min-width: $desktop-width) {
+  .switcher-controls {
+    display: block;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      left: 50%;
+      bottom: 120px;
+
+      width: 1px;
+      height: 42px;
+
+      background-color: #ffffff;
+    }
+  }
+
+  .switcher-controls__icon {
+    position: absolute;
+
+    bottom: 3px;
+  }
+
+  .switcher-controls__item {
+    position: absolute;
+    top: 210px;
+
+    font-size: 13px;
+    line-height: 15px;
+    color: #ffffff;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 50%;
+
+      width: 64px;
+      height: 1px;
+      background-color: #ffffff;
+    }
+
+    &--previous {
+      left: 120px;
+
+      &::before {
+        left: 90px;
+      }
+
+      .switcher-controls__icon {
+        left: 450px;
+      }
+    }
+
+    &--next {
+      right: 120px;
+
+      &::before {
+        right: 90px;
+      }
+
+      .switcher-controls__icon {
+        right: 450px;
+
+        transform: rotate(180deg);
+      }
+    }
+
+    &:hover,
+    &:focus {
+      color: #FF7931;
+    }
+
+    &:active {
+      color: rgba(#FF7931, 0.3);
+    }
+
+    &:hover::before,
+    &:hover::after,
+    &:focus::before,
+    &:focus::after {
+      background-color: #FF7931;
+    }
+
+    &:active::before,
+    &:active::after {
+      background-color: rgba(#FF7931, 0.3);
+    }
+
+    &:hover path,
+    &:focus path {
+      stroke: #FF7931;
+    }
+
+    &:active path {
+      opacity: 0.3;
+    }
+  }
+}

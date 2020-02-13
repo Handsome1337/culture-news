@@ -43,3 +43,35 @@
   width: 280px;
   margin: 0 auto 30px;
 }
+
+@media (min-width: $desktop-width) {
+  .new-article {
+    padding: 62px 0 48px;
+    background: url("../../img/hotel-desktop.jpg") no-repeat center,
+      linear-gradient(90deg, rgba(255,255,255,0.9360119047619048) 15%, rgba(8,17,34,1) 20%, rgba(8,17,34,1) 80%, rgba(255,255,255,1) 85%);
+  }
+
+  .new-article__wrapper {
+    position: relative;
+
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  .new-article__mark {
+    margin-bottom: 40px;
+  }
+
+  .new-article__title{
+    font-size: 72px;
+    line-height: 85px;
+
+    width: 800px;
+    margin-bottom: 140px;
+  }
+
+  .new-article__text {
+    width: 470px;
+    margin-bottom: 0;
+  }
+}

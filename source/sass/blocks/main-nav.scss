@@ -82,3 +82,18 @@
     display: block;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    width: 1120px;
+    margin: 0 auto 47px;
+
+    .main-nav__list {
+      display: flex;
+    }
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}
