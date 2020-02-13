@@ -1,27 +1,27 @@
-.slider-controls {
+.extra-controls {
   display: flex;
-  width: 110px;
+  width: 100px;
   margin: 0 auto;
   justify-content: space-between;
 }
 
-.slider-controls__item {
+.extra-controls__item {
   width: 10px;
   height: 10px;
   padding: 0;
 
-  background-color: #ffffff;
+  background-color: #000000;
   border: 0;
   border-radius: 50%;
 
-  opacity: 0.4;
+  opacity: 0.3;
 
   &--active {
     opacity: 1;
   }
 }
 
-.slider-controls__item[href] {
+.extra-controls__item[href] {
   cursor: pointer;
 
   &:hover,
@@ -31,11 +31,5 @@
 
   &:active {
     background-color: #FF7931;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .slider-controls {
-    display: none;
   }
 }

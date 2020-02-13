@@ -1,0 +1,149 @@
+.reviews {
+  margin-bottom: 50px;
+}
+
+.reviews__headline {
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+  width: 320px;
+  margin: 0 auto 15px;
+  padding: 0 16px;
+}
+
+.reviews__article {
+  position: relative;
+
+  width: 320px;
+  margin: 0 auto 30px;
+  padding: 0 16px;
+
+  &--watchlist {
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: 0;
+      left: 16px;
+
+      width: 288px;
+      height: 203px;
+
+      background: url("../../img/watchlist-icon.svg") no-repeat right 21px top 20px rgba(#070611, 0.7);
+    }
+
+    .reviews__link {
+      color: #FF7931;
+    }
+  }
+}
+
+.reviews__image {
+  margin-bottom: 15px;
+}
+
+.reviews__title {
+  font-size: 23px;
+  line-height: 31px;
+  font-family: "Playfair Display", "Georgia", "Times New Roman", serif;
+  font-weight: 900;
+
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+}
+
+.reviews__link {
+  color: #000000;
+
+  &:hover,
+  &:focus {
+    color: #FF7931;
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: rgba(#FF7931, 0.3);
+  }
+}
+
+.reviews__text {
+  font-size: 14px;
+  line-height: 150%;
+
+  margin: 0;
+}
+
+.reviews__recommendation {
+  position: relative;
+
+  width: 320px;
+  margin: 0 auto;
+}
+
+.reviews__recommendation-title {
+  position: absolute;
+  top: 43px;
+  left: 50%;
+
+  font-size: 20px;
+  line-height: 23px;
+  font-weight: 500;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+  width: 280px;
+
+  transform: translateX(-50%);
+}
+
+.reviews__recommendation-link {
+  position: absolute;
+  left: 50%;
+  bottom: 40px;
+
+  font-weight: 600;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+  display: inline-block;
+  padding: 17px 60px 15px 30px;
+
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 2px solid #FF9A64;
+
+  transform: translateX(-50%);
+
+  &:hover,
+  &:focus {
+    color: #FF9A64;
+
+    path {
+      fill: #FF9A64;
+    }
+  }
+
+  &:active {
+    color: rgba(#FF7931, 0.3);
+
+    border-color: rgba(#FF7931, 0.3);
+
+    path {
+      fill: rgba(#FF7931, 0.3);
+    }
+  }
+}
+
+.reviews__recommendation-arrow {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+
+  transform: translateY(-50%);
+}

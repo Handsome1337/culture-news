@@ -37,10 +37,10 @@
           и фантастические мечты архитекторов способен воплотить в жизнь этот мегаполис, построенный на нефти и за счет нефти</P>
         <div class="slider-controls">
           <a class="slider-controls__item slider-controls__item--active" aria-label="Первая статья"></a>
-          <a class="slider-controls__item" href="#" aria-label="Первая статья"></a>
-          <a class="slider-controls__item" href="#" aria-label="Первая статья"></a>
-          <a class="slider-controls__item" href="#" aria-label="Первая статья"></a>
-          <a class="slider-controls__item" href="#" aria-label="Первая статья"></a>
+          <a class="slider-controls__item" href="#" aria-label="Вторая статья"></a>
+          <a class="slider-controls__item" href="#" aria-label="Третья статья"></a>
+          <a class="slider-controls__item" href="#" aria-label="Четвёртая статья"></a>
+          <a class="slider-controls__item" href="#" aria-label="Пятая статья"></a>
         </div>
         <div class="switcher-controls">
           <a class="switcher-controls__item switcher-controls__item--previous" href="#">Предыдущая
@@ -89,8 +89,67 @@
         </div>
       </article>
     </section>
-    <section></section>
-    <section></section>
+    <section class="reviews">
+      <h2 class="reviews__headline">Обзоры</h2>
+      <article class="reviews__article">
+        <img class="reviews__image" width="288" height="203" src="img/reviews-montparnasse.jpg" alt="Фотография обзора">
+        <h3 class="reviews__title"><a class="reviews__link" href="#">«Шальные годы» Монпарнаса</a></h3>
+        <p class="reviews__text">В Музее изобразительных искусств имени Пушкина с 29 сентября по 29 ноября проходит выставка «Шальные годы Монпарнаса»</p>
+      </article>
+      <article class="reviews__article reviews__article--watchlist">
+        <img class="reviews__image" width="288" height="203" src="img/reviews-anatomy.jpg" alt="Фотография обзора">
+        <h3 class="reviews__title"><a class="reviews__link" href="#">Анатомия за 30 секунд</a></h3>
+        <p class="reviews__text">Сейчас, когда мир открыт нараспашку для человека и его познавательных изысканий, интерес к научно-популярной литературе заметно вырос</p>
+      </article>
+      <article class="reviews__article">
+        <img class="reviews__image" width="288" height="203" src="img/reviews-performance.jpg" alt="Фотография обзора">
+        <h3 class="reviews__title"><a class="reviews__link" href="#">Русские балетные сезоны</a></h3>
+        <p class="reviews__text">В Новом Иерусалиме стартовал необычный культурно-развлекательный спектакль, который покажут в новом театре</p>
+      </article>
+      <article class="reviews__article">
+        <img class="reviews__image" width="288" height="203" src="img/reviews-odds.jpg" alt="Фотография обзора">
+        <h3 class="reviews__title"><a class="reviews__link" href="#">Сферические чудаки</a></h3>
+        <p class="reviews__text">Корреспондентам «Культурного обозревателя» посчастливилось побывать в театре «Сфера» на премьере спектакля «Чудаки и зануды»</p>
+      </article>
+      <div class="pagination">
+        <ul class="pagination__list">
+          <li class="pagination__item"><a class="pagination__link pagination__link--current">1</a></li>
+          <li class="pagination__item"><a class="pagination__link" href="#">2</a></li>
+          <li class="pagination__item"><a class="pagination__link" href="#">3</a></li>
+          <li class="pagination__item"><a class="pagination__link" href="#">11</a></li>
+        </ul>
+        <ul class="pagination__changers">
+          <li><a class="pagination__changer pagination__changer--previous" aria-label="Предыдущая страница"></a></li>
+          <li><a class="pagination__changer pagination__changer--next" href="#" aria-label="Следующая страница"></a></li>
+        </ul>
+      </div>
+      <figure class="reviews__recommendation">
+        <figcaption class="reviews__recommendation-title">Ох, уж этот балет</figcaption>
+        <img width="320" height="176" src="img/reviews-ballet.jpg" alt="Фотография балерины">
+        <a class="reviews__recommendation-link" href="#">Смотреть
+          <svg class="reviews__recommendation-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0L6.6 1.4L12.2 7H0V9H12.2L6.6 14.6L8 16L16 8L8 0Z" fill="white"/>
+          </svg>
+        </a>
+      </figure>
+    </section>
+    <section class="extra-articles">
+      <h2 class="visually-hidden">Второстепенные статьи</h2>
+      <div class="extra-articles__article">
+        <h3 class="extra-articles__title">КАК все успевать</h3>
+        <a class="extra-articles__link" href="#">Смотреть</a>
+      </div>
+      <div class="extra-articles__article extra-articles__article--desktop"></div>
+      <div class="extra-articles__article extra-articles__article--desktop"></div>
+      <div class="extra-articles__article extra-articles__article--desktop"></div>
+      <div class="extra-controls">
+        <a class="extra-controls__item extra-controls__item--active" aria-label="Первая статья"></a>
+        <a class="extra-controls__item" href="#" aria-label="Вторая статья"></a>
+        <a class="extra-controls__item" href="#" aria-label="Третья статья"></a>
+        <a class="extra-controls__item" href="#" aria-label="Четвёртая статья"></a>
+        <a class="extra-controls__item" href="#" aria-label="Пятая статья"></a>
+      </div>
+    </section>
     <aside></aside>
   </main>
 </body>
