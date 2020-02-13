@@ -57,81 +57,84 @@
       </div>
     </article>
   </header>
-  <main>
-    <section class="news">
-      <h2 class="news__headline">Новости</h2>
-      <article class="news__article news__article--main">
-        <div class="news__wrapper">
-          <h3 class="news__title news__title--main"><a class="news__link" href="#">Новости культуры России и всего мира</a></h3>
-          <p class="news__text news__text--main">В минувшие выходные в Москве на фестивале «Оберег»<br>
-            вручили первую премию Russian World Music Awards</p>
+  <main class="main">
+    <section class="main__content">
+      <h2 class="visually-hidden">Основное содержание страницы</h2>
+      <section class="news">
+        <h3 class="news__headline">Новости</h3>
+        <article class="news__article news__article--main">
+          <div class="news__wrapper">
+            <h4 class="news__title news__title--main"><a class="news__link" href="#">Новости культуры России и всего мира</a></h4>
+            <p class="news__text news__text--main">В минувшие выходные в Москве на фестивале «Оберег»<br>
+              вручили первую премию Russian World Music Awards</p>
+          </div>
+        </article>
+        <article class="news__article">
+          <img class="news__image" width="127" height="91" src="img/news-leonov.jpg" alt="Фотография новости">
+          <div class="news__wrapper">
+            <h4 class="news__title"><a class="news__link" href="#">Открытие нового памятника Евгению Леонову</a ></h4>
+            <p class="news__text">10 сентября в 15:00 был открыт памятник писателю</p>
+          </div>
+        </article>
+        <article class="news__article news__article--watchlist">
+          <img class="news__image" width="127" height="91" src="img/news-writers.jpg" alt="Фотография новости">
+          <div class="news__wrapper">
+            <h4 class="news__title"><a class="news__link" href="#">Беседы с писателями</a></h4>
+            <p class="news__text">Русские писатели беседуют о важности искусства</p>
+          </div>
+        </article>
+        <article class="news__article">
+          <img class="news__image" width="127" height="91" src="img/news-patrick.svg" alt="Фотография новости">
+          <div class="news__wrapper">
+            <h4 class="news__title"><a class="news__link" href="#">День и ночь св. Патрика: встреча старых друзей</a></h4>
+            <p class="news__text">Не Джойсом единым живет Ирландия!</p>
+          </div>
+        </article>
+      </section>
+      <section class="reviews">
+        <h3 class="reviews__headline">Обзоры</h3>
+        <article class="reviews__article">
+          <img class="reviews__image" width="288" height="203" src="img/reviews-montparnasse.jpg" alt="Фотография обзора">
+          <h4 class="reviews__title"><a class="reviews__link" href="#">«Шальные годы» Монпарнаса</a></h4>
+          <p class="reviews__text">В Музее изобразительных искусств имени Пушкина с 29 сентября по 29 ноября проходит выставка «Шальные годы Монпарнаса»</p>
+        </article>
+        <article class="reviews__article reviews__article--watchlist">
+          <img class="reviews__image" width="288" height="203" src="img/reviews-anatomy.jpg" alt="Фотография обзора">
+          <h4 class="reviews__title"><a class="reviews__link" href="#">Анатомия за 30 секунд</a></h4>
+          <p class="reviews__text">Сейчас, когда мир открыт нараспашку для человека и его познавательных изысканий, интерес к научно-популярной литературе заметно вырос</p>
+        </article>
+        <article class="reviews__article">
+          <img class="reviews__image" width="288" height="203" src="img/reviews-performance.jpg" alt="Фотография обзора">
+          <h4 class="reviews__title"><a class="reviews__link" href="#">Русские балетные сезоны</a></h4>
+          <p class="reviews__text">В Новом Иерусалиме стартовал необычный культурно-развлекательный спектакль, который покажут в новом театре</p>
+        </article>
+        <article class="reviews__article">
+          <img class="reviews__image" width="288" height="203" src="img/reviews-odds.jpg" alt="Фотография обзора">
+          <h4 class="reviews__title"><a class="reviews__link" href="#">Сферические чудаки</a></h4>
+          <p class="reviews__text">Корреспондентам «Культурного обозревателя» посчастливилось побывать в театре «Сфера» на премьере спектакля «Чудаки и зануды»</p>
+        </article>
+        <div class="pagination">
+          <ul class="pagination__list">
+            <li class="pagination__item"><a class="pagination__link pagination__link--current">1</a></li>
+            <li class="pagination__item"><a class="pagination__link" href="#">2</a></li>
+            <li class="pagination__item"><a class="pagination__link" href="#">3</a></li>
+            <li class="pagination__item"><a class="pagination__link" href="#">11</a></li>
+          </ul>
+          <ul class="pagination__changers">
+            <li><a class="pagination__changer pagination__changer--previous" aria-label="Предыдущая страница"></a></li>
+            <li><a class="pagination__changer pagination__changer--next" href="#" aria-label="Следующая страница"></a></li>
+          </ul>
         </div>
-      </article>
-      <article class="news__article">
-        <img class="news__image" width="127" height="91" src="img/news-leonov.jpg" alt="Фотография новости">
-        <div class="news__wrapper">
-          <h3 class="news__title"><a class="news__link" href="#">Открытие нового памятника Евгению Леонову</a ></h3>
-          <p class="news__text">10 сентября в 15:00 был открыт памятник писателю</p>
-        </div>
-      </article>
-      <article class="news__article news__article--watchlist">
-        <img class="news__image" width="127" height="91" src="img/news-writers.jpg" alt="Фотография новости">
-        <div class="news__wrapper">
-          <h3 class="news__title"><a class="news__link" href="#">Беседы с писателями</a></h3>
-          <p class="news__text">Русские писатели беседуют о важности искусства</p>
-        </div>
-      </article>
-      <article class="news__article">
-        <img class="news__image" width="127" height="91" src="img/news-patrick.svg" alt="Фотография новости">
-        <div class="news__wrapper">
-          <h3 class="news__title"><a class="news__link" href="#">День и ночь св. Патрика: встреча старых друзей</a></h3>
-          <p class="news__text">Не Джойсом единым живет Ирландия!</p>
-        </div>
-      </article>
-    </section>
-    <section class="reviews">
-      <h2 class="reviews__headline">Обзоры</h2>
-      <article class="reviews__article">
-        <img class="reviews__image" width="288" height="203" src="img/reviews-montparnasse.jpg" alt="Фотография обзора">
-        <h3 class="reviews__title"><a class="reviews__link" href="#">«Шальные годы» Монпарнаса</a></h3>
-        <p class="reviews__text">В Музее изобразительных искусств имени Пушкина с 29 сентября по 29 ноября проходит выставка «Шальные годы Монпарнаса»</p>
-      </article>
-      <article class="reviews__article reviews__article--watchlist">
-        <img class="reviews__image" width="288" height="203" src="img/reviews-anatomy.jpg" alt="Фотография обзора">
-        <h3 class="reviews__title"><a class="reviews__link" href="#">Анатомия за 30 секунд</a></h3>
-        <p class="reviews__text">Сейчас, когда мир открыт нараспашку для человека и его познавательных изысканий, интерес к научно-популярной литературе заметно вырос</p>
-      </article>
-      <article class="reviews__article">
-        <img class="reviews__image" width="288" height="203" src="img/reviews-performance.jpg" alt="Фотография обзора">
-        <h3 class="reviews__title"><a class="reviews__link" href="#">Русские балетные сезоны</a></h3>
-        <p class="reviews__text">В Новом Иерусалиме стартовал необычный культурно-развлекательный спектакль, который покажут в новом театре</p>
-      </article>
-      <article class="reviews__article">
-        <img class="reviews__image" width="288" height="203" src="img/reviews-odds.jpg" alt="Фотография обзора">
-        <h3 class="reviews__title"><a class="reviews__link" href="#">Сферические чудаки</a></h3>
-        <p class="reviews__text">Корреспондентам «Культурного обозревателя» посчастливилось побывать в театре «Сфера» на премьере спектакля «Чудаки и зануды»</p>
-      </article>
-      <div class="pagination">
-        <ul class="pagination__list">
-          <li class="pagination__item"><a class="pagination__link pagination__link--current">1</a></li>
-          <li class="pagination__item"><a class="pagination__link" href="#">2</a></li>
-          <li class="pagination__item"><a class="pagination__link" href="#">3</a></li>
-          <li class="pagination__item"><a class="pagination__link" href="#">11</a></li>
-        </ul>
-        <ul class="pagination__changers">
-          <li><a class="pagination__changer pagination__changer--previous" aria-label="Предыдущая страница"></a></li>
-          <li><a class="pagination__changer pagination__changer--next" href="#" aria-label="Следующая страница"></a></li>
-        </ul>
-      </div>
-      <figure class="reviews__recommendation">
-        <figcaption class="reviews__recommendation-title">Ох, уж этот балет</figcaption>
-        <img width="320" height="176" src="img/reviews-ballet.jpg" alt="Фотография балерины">
-        <a class="reviews__recommendation-link" href="#">Смотреть
-          <svg class="reviews__recommendation-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0L6.6 1.4L12.2 7H0V9H12.2L6.6 14.6L8 16L16 8L8 0Z" fill="white"/>
-          </svg>
-        </a>
-      </figure>
+        <figure class="reviews__recommendation">
+          <figcaption class="reviews__recommendation-title">Ох, уж этот балет</figcaption>
+          <img width="320" height="176" src="img/reviews-ballet.jpg" alt="Фотография балерины">
+          <a class="reviews__recommendation-link" href="#">Смотреть
+            <svg class="reviews__recommendation-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0L6.6 1.4L12.2 7H0V9H12.2L6.6 14.6L8 16L16 8L8 0Z" fill="white"/>
+            </svg>
+          </a>
+        </figure>
+      </section>
     </section>
     <section class="extra-articles">
       <h2 class="visually-hidden">Второстепенные статьи</h2>

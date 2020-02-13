@@ -9,16 +9,14 @@
   text-transform: uppercase;
   letter-spacing: 2px;
 
-  width: 320px;
-  margin: 0 auto 15px;
+  margin-bottom: 15px;
   padding: 0 16px;
 }
 
 .reviews__article {
   position: relative;
 
-  width: 320px;
-  margin: 0 auto 30px;
+  margin-bottom: 30px;
   padding: 0 16px;
 
   &--watchlist {
@@ -80,7 +78,6 @@
 .reviews__recommendation {
   position: relative;
 
-  width: 320px;
   margin: 0 auto;
 }
 
