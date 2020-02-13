@@ -1,0 +1,106 @@
+.news {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.news__headline {
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
+  padding-top: 50px;
+}
+
+.news__article {
+  position: relative;
+
+  display: flex;
+  flex-flow: row wrap;
+  margin-bottom: 31px;
+
+  &--main {
+    display: block;
+    margin-bottom: 25px;
+    padding: 162px 15px 20px;
+
+    background: url("../../img/news-birds.png") no-repeat #efeff4;
+  }
+
+  &--watchlist {
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: 127px;
+      height: 91px;
+
+      background: url("../../img/watchlist-icon.svg") no-repeat right 8px top 9px rgba(#15151e, 0.5);
+    }
+
+    .news__link {
+      color: #FF7931;
+    }
+  }
+}
+
+.news__title {
+  font-size: 14px;
+  line-height: 19px;
+  font-family: "Playfair Display", "Georgia", "Times New Roman", serif;
+  font-weight: 900;
+
+  width: 140px;
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+
+  &--main {
+    font-size: 20px;
+    line-height: 27px;
+
+    width: 260px;
+    margin-bottom: 15px;
+  }
+}
+
+.news__link {
+  color: #000000;
+
+  &:hover,
+  &:focus {
+    color: #FF7931;
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: rgba(#FF7931, 0.3);
+  }
+}
+
+.news__image {
+  align-self: flex-start;
+  margin-right: 15px;
+}
+
+.news__text {
+  font-size: 10px;
+  line-height: 150%;
+
+  width: 140px;
+  margin: 0;
+
+  &--main {
+    font-size: 14px;
+
+    width: 250px;
+  }
+}
