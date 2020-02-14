@@ -1,0 +1,55 @@
+.site-footer {
+  display: none;
+}
+
+@media (min-width: $desktop-width) {
+  .site-footer {
+    display: block;
+    padding: 26px 0 15px;
+
+    background-color: #F7F7F7;
+  }
+
+  .site-footer__headline {
+    font-size: 28px;
+    line-height: 37px;
+    font-family: "Playfair Display", "Georgia", "Times New Roman", serif;
+    font-weight: 900;
+    text-align: center;
+    letter-spacing: 1px;
+
+    margin: 0;
+    margin-bottom: 32px;
+    padding: 0;
+  }
+
+  .site-footer__nav {
+    position: relative;
+
+    width: 1200px;
+    margin: 0 auto 8px;
+    padding: 0 16px 46px;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      bottom: 0;
+
+      width: 1168px;
+      height: 1px;
+      background-color: rgba(#000000, 0.2);
+    }
+  }
+
+  .site-footer__copyright {
+    font-size: 10px;
+    line-height: 15px;
+    color: rgba(#000000, 0.2);
+    text-align: end;
+
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+}
