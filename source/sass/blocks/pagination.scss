@@ -26,6 +26,10 @@
 .pagination__item {
   margin-right: 5px;
 
+  &--desktop {
+    display: none;
+  }
+
   &:last-of-type {
     margin-right: 0;
     margin-left: auto;
@@ -79,18 +83,138 @@
   border-right: 10px solid rgba(#000000, 0.3);
   border-bottom: 10px solid transparent;
 
+  &--previous {
+    &[href]:hover,
+    &[href]:focus {
+      border-right-color: #FF7931;
+    }
+
+    &[href]:active {
+      border-right-color: rgba(#FF7931, 0.3);
+    }
+  }
+
   &--next {
     right: 16px;
 
     border-left: 10px solid rgba(#000000, 0.3);
     border-right: none;
 
-    &[href]:hover {
+    &[href]:hover,
+    &[href]:focus {
       border-left-color: #FF7931;
+    }
+
+    &[href]:active {
+      border-left-color: rgba(#FF7931, 0.3);
     }
   }
 
   &[href] {
     cursor: pointer;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .pagination {
+    width: 200px;
+    margin: 15px auto 85px;
+    padding: 0;
+  }
+
+  .pagination__list {
+    align-items: baseline;
+    padding: 0;
+
+    &::after {
+      right: 35px;
+      top: 13px;
+    }
+  }
+
+  .pagination__item {
+    margin-right: 24px;
+
+    &--desktop {
+      display: block;
+    }
+
+    &--mobile {
+      display: none;
+    }
+  }
+
+  .pagination__link {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+
+    font-size: 14px;
+    line-height: 17px;
+    color: rgba(#000000, 0.4);
+
+    &--current {
+      padding-bottom: 4px;
+
+      font-size: 20px;
+      line-height: 24px;
+      color: #000000;
+
+      border: 0;
+
+      &::after {
+        content: "";
+
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+
+        width: 13px;
+        height: 3px;
+
+        background-color: #FF7931;
+
+        transform: translateX(-50%);
+      }
+    }
+  }
+
+  .pagination__changer {
+    left: -115px;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: -15px;
+      left: 26px;
+
+      width: 1px;
+      height: 30px;
+
+      background-color: rgba(#000000, 0.3);
+    }
+
+    &--next {
+      left: 300px;
+      right: 0;
+
+      &::before {
+        left: -26px;
+      }
+    }
+
+    &[href]:hover::before,
+    &[href]:focus::before {
+      background-color: #FF7931;
+    }
+
+    &[href]:active::before {
+      background-color: rgba(#FF7931, 0.3);
+    }
   }
 }

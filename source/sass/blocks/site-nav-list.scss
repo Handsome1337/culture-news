@@ -54,22 +54,20 @@
   &:hover,
   &:focus {
     color: #FF7931;
+
+    &::before,
+    &::after {
+      background-color: #FF7931;
+    }
   }
 
   &:active {
     color: rgba(#FF7931, 0.3);
-  }
 
-  &:hover::before,
-  &:hover::after,
-  &:focus::before,
-  &:focus::after {
-    background-color: #FF7931;
-  }
-
-  &:active::before,
-  &:active::after {
-    background-color: rgba(#FF7931, 0.3);
+    &::before,
+    &::after {
+      background-color: rgba(#FF7931, 0.3);
+    }
   }
 }
 
@@ -100,7 +98,7 @@
 
     &::before,
     &::after {
-    display: none;
-  }
+      display: none;
+    }
   }
 }

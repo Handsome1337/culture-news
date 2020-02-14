@@ -74,31 +74,28 @@
     &:hover,
     &:focus {
       color: #FF7931;
+
+      &::before,
+      &::after {
+        background-color: #FF7931;
+      }
+
+      path {
+        stroke: #FF7931;
+      }
     }
 
     &:active {
       color: rgba(#FF7931, 0.3);
-    }
 
-    &:hover::before,
-    &:hover::after,
-    &:focus::before,
-    &:focus::after {
-      background-color: #FF7931;
-    }
+      &::before,
+      &::after {
+        background-color: rgba(#FF7931, 0.3);
+      }
 
-    &:active::before,
-    &:active::after {
-      background-color: rgba(#FF7931, 0.3);
-    }
-
-    &:hover path,
-    &:focus path {
-      stroke: #FF7931;
-    }
-
-    &:active path {
-      opacity: 0.3;
+      path {
+        opacity: 0.3;
+      }
     }
   }
 }

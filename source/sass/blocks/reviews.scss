@@ -1,5 +1,9 @@
 .reviews {
   margin-bottom: 50px;
+
+  br {
+    display: none;
+  }
 }
 
 .reviews__headline {
@@ -9,6 +13,7 @@
   text-transform: uppercase;
   letter-spacing: 2px;
 
+  margin: 0;
   margin-bottom: 15px;
   padding: 0 16px;
 }
@@ -75,6 +80,14 @@
   margin: 0;
 }
 
+.reviews__views {
+  display: none;
+}
+
+.reviews__comments {
+  display: none;
+}
+
 .reviews__recommendation {
   position: relative;
 
@@ -101,9 +114,11 @@
 
 .reviews__recommendation-link {
   position: absolute;
-  left: 50%;
+  right: 50%;
   bottom: 40px;
 
+  font-size: 12px;
+  line-height: 14px;
   font-weight: 600;
   color: #ffffff;
   text-transform: uppercase;
@@ -115,7 +130,7 @@
   background-color: rgba(0, 0, 0, 0.7);
   border: 2px solid #FF9A64;
 
-  transform: translateX(-50%);
+  transform: translateX(50%);
 
   &:hover,
   &:focus {
@@ -143,4 +158,144 @@
   right: 30px;
 
   transform: translateY(-50%);
+}
+
+@media (min-width: $desktop-width) {
+  .reviews {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    br {
+      display: block;
+    }
+  }
+
+  .reviews__headline {
+    width: 100%;
+    padding: 0;
+  }
+
+  .reviews__article {
+    width: 370px;
+    padding: 0;
+
+    img {
+      width: 370px;
+    }
+
+    &--watchlist {
+      &::after {
+        left: 0;
+
+        width: 370px;
+        height: 203px;
+
+        background-position: right 8px top 10px;
+      }
+    }
+  }
+
+  .reviews__image {
+    margin-bottom: 20px;
+  }
+
+
+  .reviews__views {
+    position: absolute;
+    top: 172px;
+    left: 45px;
+    z-index: 10;
+
+    font-size: 16px;
+    line-height: 20px;
+    color: rgba(#ffffff, 0.4);
+
+    display: block;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      right: 22px;
+      top: 4px;
+
+      width: 24px;
+      height: 16px;
+
+      background: url("../../img/views-icon.svg") no-repeat;
+    }
+  }
+
+  .reviews__comments {
+    position: absolute;
+    top: 170px;
+    left: 106px;
+    z-index: 10;
+
+    font-size: 20px;
+    line-height: 26px;
+    color: rgba(#ffffff, 0.4);
+
+    display: block;
+
+    &:hover,
+    &:focus {
+      color: #ffffff;
+
+      &::before {
+        opacity: 1;
+      }
+    }
+
+    &:active {
+      color: rgba(#ffffff, 0.3);
+
+      &::before {
+        opacity: 0.3;
+      }
+    }
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      right: 15px;
+      top: 7px;
+
+      width: 18px;
+      height: 16px;
+
+      background: url("../../img/comments-icon.svg") no-repeat;
+
+      opacity: 0.4;
+    }
+  }
+
+  .reviews__recommendation {
+    width: 100%;
+
+    img {
+      width: 770px;
+    }
+  }
+
+  .reviews__recommendation-title {
+    top: 50%;
+    left: 113px;
+
+    font-size: 30px;
+    line-height: 35px;
+
+    width: 330px;
+
+    transform: translateY(-50%);
+  }
+
+  .reviews__recommendation-link {
+    right: 114px;
+    bottom: 50%;
+
+    transform: translateY(50%);
+  }
 }

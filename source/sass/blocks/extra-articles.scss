@@ -51,3 +51,47 @@
     border-color: #FF7931;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .extra-articles {
+    order: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 97px;
+    padding: 0;
+  }
+
+  .extra-articles__article {
+    width: 270px;
+    min-height: 107px;
+    margin-bottom: 0;
+    padding-top: 42px;
+
+    &--desktop {
+      display: block;
+    }
+
+    &--main {
+      background-image: url("../../img/article-time-desktop.jpg");
+    }
+
+    &:nth-of-type(2) {
+      background: url("../../img/article-desert-desktop.jpg") no-repeat #a07155;
+    }
+
+    &:nth-of-type(3) {
+      background: url("../../img/article-sport-desktop.jpg") no-repeat #416681;
+    }
+
+    &:nth-of-type(4) {
+      background: url("../../img/article-airplanes-desktop.jpg") no-repeat #e6e7e9;
+    }
+  }
+
+  .extra-articles__link {
+    margin-bottom: 28px;
+  }
+}

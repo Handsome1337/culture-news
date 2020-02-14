@@ -1,6 +1,5 @@
 .offers {
-  width: 320px;
-  margin: 0 auto 60px;
+  margin-bottom: 60px;
   padding: 0 16px;
 }
 
@@ -103,4 +102,33 @@
   right: 30px;
 
   transform: translateY(-50%);
+}
+
+@media (min-width: $desktop-width) {
+  .offers {
+    width: 370px;
+    margin-bottom: 40px;
+    padding: 99px 0 0;
+
+    img {
+      width: auto;
+    }
+  }
+
+  .offers__item {
+    margin: 0;
+    margin-bottom: 30px;
+
+    &--light .offers__title {
+      top: 48px;
+    }
+
+    &--light .offers__link {
+      bottom: 30px;
+    }
+  }
+
+  .offers__title {
+    font-size: 30px;
+  }
 }
