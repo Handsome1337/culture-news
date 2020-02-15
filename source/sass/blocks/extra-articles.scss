@@ -12,7 +12,7 @@
   padding-top: 40px;
 
   &:first-of-type {
-    background: url("../../img/article-time.jpg") no-repeat #1f272a;
+    background: url("../img/article-time.jpg") no-repeat #1f272a;
   }
 
   &--desktop {
@@ -75,19 +75,19 @@
     }
 
     &--main {
-      background-image: url("../../img/article-time-desktop.jpg");
+      background-image: url("../img/article-time-desktop.jpg");
     }
 
     &:nth-of-type(2) {
-      background: url("../../img/article-desert-desktop.jpg") no-repeat #a07155;
+      background: url("../img/article-desert-desktop.jpg") no-repeat #a07155;
     }
 
     &:nth-of-type(3) {
-      background: url("../../img/article-sport-desktop.jpg") no-repeat #416681;
+      background: url("../img/article-sport-desktop.jpg") no-repeat #416681;
     }
 
     &:nth-of-type(4) {
-      background: url("../../img/article-airplanes-desktop.jpg") no-repeat #e6e7e9;
+      background: url("../img/article-airplanes-desktop.jpg") no-repeat #e6e7e9;
     }
   }
 

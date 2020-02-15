@@ -6,15 +6,20 @@
   "devDependencies": {
     "autoprefixer": "9.7.4",
     "browser-sync": "2.26.7",
+    "del": "5.1.0",
     "gulp": "4.0.2",
+    "gulp-csso": "4.0.1",
+    "gulp-htmlmin": "5.0.1",
+    "gulp-imagemin": "7.1.0",
     "gulp-plumber": "1.2.1",
     "gulp-postcss": "8.0.0",
     "gulp-sass": "4.0.2",
     "gulp-sourcemaps": "2.6.5",
+    "gulp-uglify": "3.0.2",
     "normalize.scss": "0.1.0"
   },
   "scripts": {
-    "build": "gulp css",
+    "build": "gulp build",
     "start": "gulp start"
   },
   "browserslist": [

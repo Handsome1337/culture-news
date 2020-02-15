@@ -3,7 +3,7 @@
 
   padding: 25px 0;
 
-  background: url("../../img/hotel.jpg") no-repeat #0a1227;
+  background: url("../img/hotel.jpg") no-repeat #0a1227;
   background-size: cover;
 }
 
@@ -47,7 +47,7 @@
 @media (min-width: $desktop-width) {
   .new-article {
     padding: 62px 0 48px;
-    background: url("../../img/hotel-desktop.jpg") no-repeat center,
+    background: url("../img/hotel-desktop.jpg") no-repeat center,
       linear-gradient(90deg, rgba(255,255,255,0.9360119047619048) 15%, rgba(8,17,34,1) 20%, rgba(8,17,34,1) 80%, rgba(255,255,255,1) 85%);
   }
 

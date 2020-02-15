@@ -27,7 +27,7 @@
     margin-bottom: 25px;
     padding: 162px 15px 20px;
 
-    background: url("../../img/news-birds.png") no-repeat #efeff4;
+    background: url("../img/news-birds.png") no-repeat #efeff4;
   }
 
   &--watchlist {
@@ -41,7 +41,7 @@
       width: 127px;
       height: 91px;
 
-      background: url("../../img/watchlist-icon.svg") no-repeat right 8px top 9px rgba(#15151e, 0.5);
+      background: url("../img/watchlist-icon.svg") no-repeat right 8px top 9px rgba(#15151e, 0.5);
     }
 
     .news__link {
@@ -127,7 +127,7 @@
       padding-top: 235px;
       padding: 235px 23px 20px;
 
-      background-image: url("../../img/news-birds-desktop.png");
+      background-image: url("../img/news-birds-desktop.png");
     }
 
   }
