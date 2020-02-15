@@ -52,37 +52,35 @@ gulp.task("server", () => {
   gulp.watch("source/*.html").on("change", gulp.series("html", "refresh"));
 });
 
-gulp.task("refresh", function (done) {
+gulp.task("refresh", (done) => {
   server.reload();
   done();
 });
 
-gulp.task("js", function () {
+gulp.task("js", () => {
   return gulp.src("source/js/*.js")
-  .pipe(uglify())
-  .pipe(gulp.dest("build/js"));
+    .pipe(uglify())
+    .pipe(gulp.dest("build/js"));
 });
 
-gulp.task("images", function () {
+gulp.task("images", () => {
   return gulp.src("source/img/*.{jpg,png,svg}")
-  .pipe(imagemin([
-    imagemin.mozjpeg({progressive: true}),
-    imagemin.optipng({optimizationLevel: 3}),
-    imagemin.svgo()
-  ]))
-  .pipe(gulp.dest("build/img"));
+    .pipe(imagemin([
+      imagemin.mozjpeg({progressive: true}),
+      imagemin.optipng({optimizationLevel: 3}),
+      imagemin.svgo()
+    ]))
+    .pipe(gulp.dest("build/img"));
 });
 
-gulp.task("copy", function () {
+gulp.task("copy", () => {
   return gulp.src("source/fonts/**/*.{woff,woff2}", {
-    base: "source"
-  })
-  .pipe(gulp.dest("build"));
+      base: "source"
+    })
+    .pipe(gulp.dest("build"));
 });
 
-gulp.task("clean", function () {
-  return del("build");
-});
+gulp.task("clean", () => del("build"));
 
 gulp.task("build", gulp.series("clean", "html", "copy", "css", "images", "js"));
 gulp.task("start", gulp.series("build", "server"));

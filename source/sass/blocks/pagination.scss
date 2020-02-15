@@ -30,7 +30,7 @@
     display: none;
   }
 
-  &:last-of-type {
+  &--mobile {
     margin-right: 0;
     margin-left: auto;
   }
@@ -141,6 +141,11 @@
 
     &--mobile {
       display: none;
+    }
+
+    &:last-of-type {
+      margin-right: 0;
+      margin-left: auto;
     }
   }
 
