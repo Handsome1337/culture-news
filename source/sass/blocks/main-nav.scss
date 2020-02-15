@@ -83,6 +83,16 @@
   }
 }
 
+.main-nav--nojs {
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__list {
+    display: block;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .main-nav {
     width: 1120px;
