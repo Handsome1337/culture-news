@@ -54,6 +54,8 @@
 
 @media (min-width: $desktop-width) {
   .extra-articles {
+    position: relative;
+
     order: 1;
     display: flex;
     flex-wrap: wrap;

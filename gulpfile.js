@@ -14,6 +14,7 @@ const csso = require("gulp-csso");
 const server = require("browser-sync").create();
 
 const uglify = require("gulp-uglify");
+const concat = require("gulp-concat");
 
 const imagemin = require("gulp-imagemin");
 
@@ -58,7 +59,8 @@ gulp.task("refresh", (done) => {
 });
 
 gulp.task("js", () => {
-  return gulp.src("source/js/*.js")
+  return gulp.src(["source/js/*.js", "node_modules/picturefill/dist/picturefill.js"])
+    .pipe(concat("main.js"))
     .pipe(uglify())
     .pipe(gulp.dest("build/js"));
 });

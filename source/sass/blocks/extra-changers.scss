@@ -5,6 +5,8 @@
 @media (min-width: $desktop-width) {
   .extra-changers {
     position: absolute;
+    top: 50%;
+    left: 0;
 
     display: block;
   }

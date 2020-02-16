@@ -8,6 +8,7 @@
     "browser-sync": "2.26.7",
     "del": "5.1.0",
     "gulp": "4.0.2",
+    "gulp-concat": "2.6.1",
     "gulp-csso": "4.0.1",
     "gulp-htmlmin": "5.0.1",
     "gulp-imagemin": "7.1.0",
@@ -16,7 +17,8 @@
     "gulp-sass": "4.0.2",
     "gulp-sourcemaps": "2.6.5",
     "gulp-uglify": "3.0.2",
-    "normalize.scss": "0.1.0"
+    "normalize.scss": "0.1.0",
+    "picturefill": "3.0.3"
   },
   "scripts": {
     "build": "gulp build",
